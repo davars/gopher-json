@@ -1,4 +1,4 @@
-package json
+package luajson
 
 import (
 	"encoding/json"
@@ -21,6 +21,14 @@ func Loader(L *lua.LState) int {
 	t := L.NewTable()
 	L.SetFuncs(t, api)
 	L.Push(t)
+	return 1
+}
+
+const LibName = "cjson"
+
+func Open(L *lua.LState) int {
+	mod := L.RegisterModule("cjson", api).(*lua.LTable)
+	L.Push(mod)
 	return 1
 }
 

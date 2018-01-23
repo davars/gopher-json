@@ -1,4 +1,4 @@
-// Package json is a simple JSON encoder/decoder for gopher-lua.
+// Package luajson is a simple JSON encoder/decoder for gopher-lua.
 //
 // Documentation
 //
@@ -12,9 +12,9 @@
 //
 // Below is an example usage of the library:
 //  import (
-//      luajson "layeh.com/gopher-json"
+//      luajson "github.com/davars/gopher-json"
 //  )
 //
 //  L := lua.NewState()
 //  luajson.Preload(s)
-package json // import "layeh.com/gopher-json"
+package luajson // import "github.com/davars/gopher-json"

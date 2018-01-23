@@ -1,4 +1,4 @@
-package json
+package luajson
 
 import (
 	"testing"
