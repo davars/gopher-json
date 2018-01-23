@@ -12,9 +12,9 @@
 //
 // Below is an example usage of the library:
 //  import (
-//      luajson "github.com/davars/gopher-json"
+//      luajson "github.com/davars/luajson"
 //  )
 //
 //  L := lua.NewState()
 //  luajson.Preload(s)
-package luajson // import "github.com/davars/gopher-json"
+package luajson
